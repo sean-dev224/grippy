@@ -1,0 +1,13 @@
+{
+    "configuration": "default",
+    "documentId": "1011b21e2d047ab7c19eabf2",
+    "documentMicroversion": "a50fb7db2fed1caa6eb21da0",
+    "elementId": "68f15201783b562a379cc446",
+    "fullConfiguration": "default",
+    "id": "M8vCEoWR2k95jQEgG",
+    "isStandardContent": false,
+    "name": "DS3225MG 25KG <2>",
+    "partId": "JFb",
+    "suppressed": false,
+    "type": "Part"
+}

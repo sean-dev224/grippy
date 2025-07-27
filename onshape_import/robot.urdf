@@ -1,0 +1,205 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/1011b21e2d047ab7c19eabf2/w/8b818288b51160b41a84479c/e/b33e9350175f666cda431e23 -->
+<robot name="onshape_import">
+  <!-- Link base -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part base -->
+    <visual>
+      <origin xyz="-0.0472526 0.057205 -0.0118337" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/base.stl"/>
+      </geometry>
+      <material name="base_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0472526 0.057205 -0.0118337" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/base.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link driven -->
+  <link name="driven">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part driven -->
+    <visual>
+      <origin xyz="0 0 0.055" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/driven.stl"/>
+      </geometry>
+      <material name="driven_material">
+        <color rgba="0.768627 0.886275 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.055" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/driven.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servomount -->
+    <visual>
+      <origin xyz="6.93889e-18 1.38778e-17 0.055" rpy="3.14159 6.56859e-47 -7.21645e-16"/>
+      <geometry>
+        <mesh filename="package://assets/servomount.stl"/>
+      </geometry>
+      <material name="servomount_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="6.93889e-18 1.38778e-17 0.055" rpy="3.14159 6.56859e-47 -7.21645e-16"/>
+      <geometry>
+        <mesh filename="package://assets/servomount.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link bicep -->
+  <link name="bicep">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part bicep -->
+    <visual>
+      <origin xyz="-2.77556e-17 -1.38778e-17 0.001" rpy="-3.14159 8.73122e-16 2.77556e-16"/>
+      <geometry>
+        <mesh filename="package://assets/bicep.stl"/>
+      </geometry>
+      <material name="bicep_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-2.77556e-17 -1.38778e-17 0.001" rpy="-3.14159 8.73122e-16 2.77556e-16"/>
+      <geometry>
+        <mesh filename="package://assets/bicep.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link forearm -->
+  <link name="forearm">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part forearm -->
+    <visual>
+      <origin xyz="-6.93889e-18 5.55112e-17 0.001" rpy="-3.14159 -1.28336e-30 -7.02579e-31"/>
+      <geometry>
+        <mesh filename="package://assets/forearm.stl"/>
+      </geometry>
+      <material name="forearm_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-6.93889e-18 5.55112e-17 0.001" rpy="-3.14159 -1.28336e-30 -7.02579e-31"/>
+      <geometry>
+        <mesh filename="package://assets/forearm.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo -->
+    <visual>
+      <origin xyz="-0.0063 -0.1337 -0.016" rpy="-2.20109e-16 5.94814e-17 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/servo.stl"/>
+      </geometry>
+      <material name="servo_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0063 -0.1337 -0.016" rpy="-2.20109e-16 5.94814e-17 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/servo.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link servohorn -->
+  <link name="servohorn">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part mount -->
+    <visual>
+      <origin xyz="-9.02056e-17 -0.01715 0.0111" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mount.stl"/>
+      </geometry>
+      <material name="mount_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-9.02056e-17 -0.01715 0.0111" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mount.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servohorn -->
+    <visual>
+      <origin xyz="-0.0165 -0.0063 -0.02865" rpy="-3.01754e-30 -5.76698e-31 -5.1769e-31"/>
+      <geometry>
+        <mesh filename="package://assets/servohorn.stl"/>
+      </geometry>
+      <material name="servohorn_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0165 -0.0063 -0.02865" rpy="-3.01754e-30 -5.76698e-31 -5.1769e-31"/>
+      <geometry>
+        <mesh filename="package://assets/servohorn.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from forearm to servohorn -->
+  <joint name="joint4" type="revolute">
+    <origin xyz="5.36376e-15 -0.1502 0.01265" rpy="3.82418e-14 1.77812e-15 -7.77156e-16"/>
+    <parent link="forearm"/>
+    <child link="servohorn"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from bicep to forearm -->
+  <joint name="joint3" type="revolute">
+    <origin xyz="5.48173e-15 -0.15 -0.0087" rpy="-1.33146e-14 -6.52451e-15 1.13798e-14"/>
+    <parent link="bicep"/>
+    <child link="forearm"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from driven to bicep -->
+  <joint name="joint2" type="revolute">
+    <origin xyz="1.38778e-17 -0.01 -0.069" rpy="1.5708 -6.56859e-47 3.14159"/>
+    <parent link="driven"/>
+    <child link="bicep"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from base to driven -->
+  <joint name="joint1" type="revolute">
+    <origin xyz="-0.0472526 0.057205 0.0431663" rpy="3.14159 -0 0"/>
+    <parent link="base"/>
+    <child link="driven"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+</robot>
